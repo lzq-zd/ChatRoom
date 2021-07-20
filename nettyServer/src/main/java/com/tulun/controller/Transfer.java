@@ -161,7 +161,7 @@ public class Transfer {
 
             if(sign) {
                 objectNode1.put("code",200);
-                assist.disposeVerificationCode(userName,uemail,jedis); //仅仅是发送验证码都邮箱，记录当前验证码
+                assist.disposeVerificationCode(userName,uemail,jedis); //仅仅是发送验证码到邮箱，记录当前验证码
             }else {
                 objectNode1.put("code",0);
             }
